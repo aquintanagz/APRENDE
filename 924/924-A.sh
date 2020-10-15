@@ -21,7 +21,7 @@ git clone https://github.com/aquintanagz/APRENDE.git
 -----  
 Crear rama para el programador 1
 
-git checkout -b aquintanagz master
+git checkout -b oscar master
 
 git pull origin master
 
@@ -46,7 +46,7 @@ git push origin oscar
 
 ------
 
-a
+
 
 
 
