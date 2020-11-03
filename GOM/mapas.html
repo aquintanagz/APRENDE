@@ -14,7 +14,9 @@
     <style type="text/css">
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      #map {
+     
+
+#map {
         height: 100%;
       }
 
@@ -25,6 +27,18 @@
         margin: 0;
         padding: 0;
       }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+     
+
+
     </style>
     <script>
 
@@ -44,10 +58,9 @@
       function initMap() {
         
      
-      url2 = "http://movil.imss.gob.mx/apimobile-catalogos/v3/umfs?tipoOperacion=consultarPorCP&cp=03620";
-
       url = "http://localhost:9091/msbitacora-proyectos/v1/proyecto/centroSalud";
 
+     
         var http_request;
         let jsonStr;
         let jsonObj;
@@ -134,23 +147,23 @@
         </div>
 </div>
   
-<div class="container">
-  <div class="row">
-    <div class="col-sm-6">
+
+    
+
+    <div id="izq">
       <h3>Unidad Médica Familiar</h3>
       <p>A qué unidad medica debo acercarme ?</p>
       <p>Acude a tu unidad medica mas cercana para referencia inmediata</p>
-    </div>
-    <div class="col-sm-6">
       <h3>Código Postal</h3>
       <input type="text" id="codPostal" name="codPostal"><br><br>
       <input type="submit" value="Buscar">
     </div>
-    
-  </div>
+      <div id="map"></div>
+
+ 
+  
 </div>
 
-    <div id="map"></div>
   </body>
 </html>
 
