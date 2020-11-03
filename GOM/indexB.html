@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mapa</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHr7LxuHoKRdqWPyRsWZN-dQdyvu9TMrM&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style type="text/css">
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script>
+
+      var locations = [
+       ['Clinica A', 19.3934516,-99.16259, 1],
+       ['Clinica B', 19.3858705,-99.1393601, 2]
+      ];  
+      // In this example, we center the map, and add a marker, using a LatLng object
+      // literal instead of a google.maps.LatLng object. LatLng object literals are
+      // a convenient way to add a LatLng coordinate and, in most cases, can be used
+      // in place of a google.maps.LatLng object.
+      let map;
+
+      
+      
+
+      function initMap() {
+        
+     
+      url = "http://movil.imss.gob.mx/apimobile-catalogos/v3/umfs?tipoOperacion=consultarPorCP&cp=03620";
+
+/*
+var http_request;
+    http_request =  new XMLHttpRequest();
+    http_request.onreadystatechange = function () { 
+    
+
+    if (this.readyState == 4 && this.status == 200) {
+          console(this);
+
+        }
+     };
+    http_request.open("GET", url);
+    //http_request.withCredentials = true;
+    http_request.setRequestHeader("Content-Type", "application/json");
+    http_request.setRequestHeader("Access-Control-Allow-Origin", "*");
+    http_request.setRequestHeader("charset","UTF-8");
+    http_request.send({ 'request': "authentication token" });
+*/
+        
+      var jsonStr = '[{"id":573,"clave":"48330","nombre":"UMF 028 DEL VALLE","domicilio":"EJE VIAL 2 PONIENTE GABRIEL MANCERA ESQUINA SAN BORJA NO. 88  COLONIA DEL VALLE C.P. 3100 BENITO JUÁREZ  DELEGACIÓN BENITO JUÁREZ  DISTRITO FEDERAL","telefono":"55 59 67 74","latitud":19.3934516,"longitud":-99.16259,"tipo":"INST_002"},{"id":232,"clave":"49401","nombre":"HPMF 010 LA POSTAL","domicilio":"CLZD. DE TLALPAN NO. 931 NIÑOS HÉROES DE CHAPULTEPEC COL. NIÑOS HÉROES C.P. 03400","telefono":"55 79 63 59","latitud":19.3858705,"longitud":-99.1393601,"tipo":"INST_002"}]'; 
+
+
+    var jsonObj = JSON.parse(jsonStr);
+        
+
+
+        const mapOptions = {
+          zoom: 14,
+          center: { lat: locations[0][1], lng: locations[0][2] },
+        };
+        map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+        for (i = 0; i < jsonObj.length; i++) {  
+          const marker = new google.maps.Marker({
+            // The below line is equivalent to writing:
+            // position: new google.maps.LatLng(-34.397, 150.644)
+            position: new google.maps.LatLng( jsonObj[i].latitud  ,jsonObj[i].longitud   ),
+            //position: { lat: -34.397, lng: 150.644 },
+            map: map,
+          });
+
+           // You can use a LatLng literal in place of a google.maps.LatLng object when
+          // creating the Marker object. Once the Marker object is instantiated, its
+          // position will be available as a google.maps.LatLng object. In this case,
+          // we retrieve the marker's position using the
+          // google.maps.LatLng.getPosition() method.
+          const infowindow = new google.maps.InfoWindow({
+            content: "<p>Marker Location:" + marker.getPosition() + "</p>",
+          });
+          //google.maps.event.addListener(marker, "click", () => {
+            //infowindow.open(map, marker);
+          //});
+
+          google.maps.event.addListener(marker, 'click', (function(marker, index) {
+           return function() {
+               infowindow.setContent(jsonObj[index].domicilio);
+               infowindow.open(map, marker);
+           }
+        })(marker, i));
+
+        } 
+        
+
+        
+
+       
+      
+
+      }
+    </script>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <div class="row">
+        <div class="col-sm-6">
+  <h1>Servicios médicos</h1>
+    <p>El equipo utiliza un modelo de atención multidiciplinaria</p> 
+    <p>centrado en proporcionar a cada paciente un enfoque holìstico y</p>
+    <p>personalizado conforme se preparan para el tratamiento, lo</p>
+    <p>experimentan y se recuperan del mismo.</p>
+  </div>
+  <div class="col-sm-6">
+    <img src="./medicos2.png" alt="Responsive image">
+  </div>
+        </div>
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Unidad Médica Familiar</h3>
+      <p>A qué unidad medica debo acercarme ?</p>
+      <p>Acude a tu unidad medica mas cercana para referencia inmediata</p>
+    </div>
+    <div class="col-sm-6">
+      <h3>Código Postal</h3>
+      <input type="text" id="codPostal" name="codPostal"><br><br>
+      <input type="submit" value="Buscar">
+    </div>
+    
+  </div>
+</div>
+
+    <div id="map"></div>
+  </body>
+</html>
+
