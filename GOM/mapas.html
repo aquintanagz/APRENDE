@@ -15,9 +15,15 @@
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
      
+     #izq{
+       padding-right: 10%;
+       padding-left: 10%;
+     }
 
 #map {
         height: 100%;
+        width: 100%;
+      
       }
 
       /* Optional: Makes the sample page fill the window. */
@@ -28,15 +34,7 @@
         padding: 0;
       }
 
-      /* Optional: Makes the sample page fill the window. */
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-
-     
+    
 
 
     </style>
@@ -148,9 +146,14 @@
 </div>
   
 
-    
 
-    <div id="izq">
+
+<table >
+ 
+
+  <tr>
+    <td  id="izq">
+      <div >
       <h3>Unidad Médica Familiar</h3>
       <p>A qué unidad medica debo acercarme ?</p>
       <p>Acude a tu unidad medica mas cercana para referencia inmediata</p>
@@ -158,7 +161,20 @@
       <input type="text" id="codPostal" name="codPostal"><br><br>
       <input type="submit" value="Buscar">
     </div>
-      <div id="map"></div>
+    </td>
+    <td   id="map" ></td>
+    
+  </tr>
+  
+  
+</table>
+    
+
+    </br></br>
+     </br></br>
+      </br></br>
+     </br></br>
+      
 
  
   
