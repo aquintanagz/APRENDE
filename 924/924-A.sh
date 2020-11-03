@@ -21,7 +21,7 @@ git clone https://github.com/aquintanagz/APRENDE.git
 -----  
 Crear rama para el programador 1
 
-git checkout -b aquintanagz master
+git checkout -b nelson master
 
 git pull origin master
 
@@ -29,7 +29,7 @@ git add *
 
 git commit -m "trabaje sobre los xml"
 
-git push origin aquintanagz
+git push origin rme1014
 
 ----
 bajar los cambios de la rama del progamador 1
@@ -46,7 +46,7 @@ git push origin oscar
 
 ------
 
-a
+
 
 
 
