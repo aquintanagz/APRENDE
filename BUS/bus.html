@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+ 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<style type="text/css">
+       /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .flex-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:stretch;
+        padding: 2%;
+        background-color: rgb(247, 247, 247);
+      }
+
+      .flex-container div{
+        background-color: rgb(247, 247, 247);
+        width: 45%;
+        height: 500px;
+        justify-content: center;
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+      }
+
+      .flex-container div h5{
+        letter-spacing: 5px;
+        margin-bottom: -3%;
+        color: gray;
+        padding-left: 10%;
+      }
+
+      .flex-container div h2{
+        color: rgb(41, 94, 75);
+        font-weight: bold;
+        padding-left: 10%;
+        padding-bottom: -3%;
+      }
+
+      .flex-container div h3{
+        color:rgb(41, 94, 75);
+        font-weight: bold;
+        padding-left: 10%;
+      }
+
+      .flex-container div h6{
+        font-weight: bold;
+        font-size:medium;
+        padding-left: 10%;
+      }
+
+      .flex-container div span{
+        display: flex;
+        flex-flow: row;
+        height: 25px;
+        padding-left: 10%;
+      }
+
+      .space{
+        padding-bottom: 8%;
+      }
+
+      .flex-container div p{
+        font-weight: normal;
+        padding-left: 10%;
+      }
+
+      .white{
+        background-color: white!important;
+      }
+
+
+      @media (max-width: 800px) {
+        .flex-container{
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: space-between;
+          padding: 2%;
+          background-color: rgb(247, 247, 247);
+        }
+        .flex-container div{
+          width: 100%;
+        }
+
+      }
+
+      
+
+    
+    @media (max-width: 800px) {
+        .flex-container{
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: space-between;
+          padding: 2%;
+          background-color: rgb(247, 247, 247);
+        }
+        .flex-container div{
+          width: 100%;
+        }
+
+        iframe{
+          width:100%;
+        }
+
+      }
+
+      @media only screen and (max-device-width: 1200px) {
+        .flex-container{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 2%;
+          background-color: rgb(247, 247, 247);
+        }
+        .flex-container div{
+          width: 100%;
+          padding-left:5%; 
+
+        }
+
+        iframe{
+          width:100%;
+          display : flex;
+        }
+      }
+
+      #codPostal{
+        width: 250px;
+        padding: 15px!important;
+        font-weight: small;
+        -webkit-box-sizing: border-box; 
+        -moz-box-sizing: border-box;    
+        box-sizing: border-box;
+      }
+
+       .btnBuscar{ height: 200px!important}
+
+      .label {
+  box-sizing:border-box;
+  background: #05F24C;
+  box-shadow: 2px 2px 4px #333;
+  border:5px solid #346FF7;
+  height: 200px;
+  width: 20px;
+  border-radius: 10px;
+  -webkit-animation: pulse 1s ease 1s 3;
+  -moz-animation: pulse 1s ease 1s 3;
+  animation: pulse 1s ease 1s 3;
+}
+
+
+      
+    </style>
+</head>
+<body>
+
+	<script >
+
+	var app = angular.module('myApp', []);
+	app.controller('myCtrl', function($scope) {
+	  $scope.url = "./documento.html";
+	  $scope.alCod = "No es un codigo postal valido";
+    $scope.cont = 1 ;
+
+
+	  $scope.inCodigoPostal = "";
+	 $scope.buscarDoc = function() {
+        
+         $scope.url = "./documento.html?codigo=" +$scope.inCodigoPostal;
+
+      };
+
+      $scope.validaCod = function(){
+     
+      	var patt = /^[A-Z]+$/i;
+        var result = $scope.inCodigoPostal.match(patt);
+        if(!(result == null) ){
+        	$scope.inCodigoPostal = "";
+        }
+
+
+        
+      };
+
+      
+	 
+      $scope.validaLetras = function (){
+         
+         str = "" +$scope.inCodigoPostal;
+        
+         
+         var patt=/^[0-9]{1}$/ ; 
+
+         var c =  str.charAt(str.length-1);
+        
+         var rcha = c.match(patt);
+       
+         if(rcha == null ){
+              $scope.inCodigoPostal = str.substring(0, str.length-1);
+         }
+
+     
+        if(c == " " ){
+            $scope.inCodigoPostal = str.substring(0, str.length-1);
+        }
+       
+      
+         var patt2 = /^(?:[0-9][0-9]|[1-4]\d|5[0-2])\d{3}$/;
+         var result = str.match(patt2);
+         if(str.length == 5 )
+            $scope.inCodigoPostal= str.substring(0, str.length-1);
+      };
+
+	});
+	
+	
+</script>
+	
+
+<div ng-app="myApp" ng-controller="myCtrl">
+ 
+ <div class="flex-container white">
+      <div class="white"> 
+      	<h5 class="space">Busqueda de Documentos</h5>
+           <span>
+            <input id="codPostal" ng-trim="false" ng-model="inCodigoPostal" ng-keypress="validaLetras()"  placeholder="Ingrese el c&oacute;digo postal"  ng-maxlength="5" name="codPostal" value=""><br><br>
+            <input class="btn btn-sm btn-primary button" class="btnBuscar" type="submit"  value="Buscar" style="margin-left: 20px;padding: 0px; width: 80px;" ng-click="buscarDoc()">
+          </span>
+        
+      </div>
+      <div class="white">
+        <iframe id="ifraMaps" ng-src="{{url}}" height="80%" title="W3Schools Free Online Web Tutorials"></iframe>
+      </div>
+    
+
+    
+    </div> <!-- flex-container -->
+
+</div>
+
+<script >
+  
+
+</script>
+
+</body>
+</html>

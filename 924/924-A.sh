@@ -21,8 +21,9 @@ git clone https://github.com/aquintanagz/APRENDE.git
 -----  
 Crear rama para el programador 1
 
-git checkout -b nelson master
+git checkout -b developSP4 master
 
+git checkout developSP4
 git pull origin master
 
 git add *
