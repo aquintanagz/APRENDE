@@ -168,20 +168,12 @@
 
 	var app = angular.module('myApp', []);
 	app.controller('myCtrl', function($scope) {
-	  $scope.url = "./documento.html";
+	  $scope.url = "./mapaGoogle.html";
 	  $scope.alCod = "No es un codigo postal valido";
-    $scope.cont = 1 ;
-
-
 	  $scope.inCodigoPostal = "";
-	 $scope.buscarDoc = function() {
+	 $scope.buscarCod = function() {
         
-    var str = $scope.inCodigoPostal;
-  var res = str.split("-");
-
-         $scope.url = "./documento.html?dia=" +res[0] +"&tipo=" +res[1] +"&num=" +res[2]  ;
-
-       
+         $scope.url = "./mapaGoogle.html?codigo=" +$scope.inCodigoPostal;
 
       };
 
@@ -196,8 +188,6 @@
 
         
       };
-
-      
 	 
       $scope.validaLetras = function (){
          
@@ -236,10 +226,14 @@
  
  <div class="flex-container white">
       <div class="white"> 
-      	<h5 class="space">Busqueda de Documentos</h5>
-           <span>
-            <input id="codPostal" ng-trim="false" ng-model="inCodigoPostal"  placeholder="Ingrese 1113-PDF-1"  ng-maxlength="13" name="codPostal" value=""><br><br>
-            <input class="btn btn-sm btn-primary button" class="btnBuscar" type="submit"  value="Buscar" style="margin-left: 20px;padding: 0px; width: 80px;" ng-click="buscarDoc()">
+      	<h5 class="space">INFORMACI&Oacute;N ESPECIAL</h5>
+        <h3>Unidad M&eacute;dica <br/>Familiar (UMF)</h3>
+          <h6>&iquest;A d&oacute;nde debo acercarme?</h6>
+          <p>Acude a la unidad m&eacute;dica que te corresponde, de acuerdo al C&oacute;digo Postal de tu domicilio.</p>
+          <h6>C&oacute;digo Postal</h6>
+          <span>
+            <input id="codPostal" ng-trim="false" ng-model="inCodigoPostal" ng-keypress="validaLetras()"  placeholder="Ingrese el c&oacute;digo postal"  ng-maxlength="5" name="codPostal" value=""><br><br>
+            <input class="btn btn-sm btn-primary button" class="btnBuscar" type="submit"  value="Buscar" style="margin-left: 20px;padding: 0px; width: 80px;" ng-click="buscarCod()">
           </span>
         
       </div>

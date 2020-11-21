@@ -105,8 +105,15 @@
 
 
      function initMap() {
-     
-        busDocumento();
+        cpostal = getParamValue("codigo");
+        
+        if (typeof cpostal === "undefined"){
+          mapaInicio();
+          return;
+        }
+
+
+        cargaMarcadores(cpostal);
        
       }
 
@@ -120,31 +127,88 @@
       }
 
 
-      function busDocumento() 
+      function cargaMarcadores(cdPostal) 
       {
-        caja = {
-          PDF: ".pdf",
-        };
-      
-        pdia = getParamValue("dia");
-        tipo = getParamValue("tipo");
-        idDoc = getParamValue("num");
-        nomCar = "/" +tipo;
-        dia = "/" +pdia;
-
-        if (typeof pdia === "undefined" && typeof tipo === "undefined"  && dia === "undefined"  ){
-          mapaInicio();
-          return;
-        }
-
-        var formato = caja[tipo];
-
-        window.location.href = "https://storage.cloud.google.com/lit-2020" +dia +nomCar +dia  +"-" +idDoc +formato;
         
-      
-      
-      } 
+          
+          if (!validaCodigoPostal("" +cdPostal)){
+            mapaInicio();
+            alert("El formato del c\u00f3digo postal no es el correcto");
+            return;
+          }
+              
+            
+         //url = "http://movil.imss.gob.mx/apimobile-catalogos/v3/umfs?tipoOperacion=consultarPorCP&cp=" +cdPostal ;
+           url = "https://movil.imss.gob.mx/apimobile-catalogos/v3/umfs?tipoOperacion=consultarPorCP&cp=" +cdPostal ;
 
+          fetch(url).then(response => {
+              return response.json();
+            }).then(data => {
+
+              if (!typeof data.code === "undefined"){
+                alert(data.description );
+                return;
+              } 
+
+              if ( data.code == 500){
+                  alert("El servidor est\u00E1 tardando m\u00E1s de lo normal,  Intenta m\u00E1s tarde." );
+                  return;
+               } 
+              
+               var jsonObj = data;
+                /*Codigo encapsulado*/ 
+                  const mapOptions = {
+                    zoom: 6,
+                    center: { lat: locations[0][1], lng: locations[0][2] },
+                  };
+                  map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+                  for (i = 0; i < jsonObj.length; i++) {  
+                        const marker = new google.maps.Marker({
+                          // The below line is equivalent to writing:
+                          // position: new google.maps.LatLng(-34.397, 150.644)
+                          position: new google.maps.LatLng( jsonObj[i].latitud  ,jsonObj[i].longitud   ),
+                          //position: { lat: -34.397, lng: 150.644 },
+                          map: map,
+                        });
+                        
+                        const infowindow = new google.maps.InfoWindow({
+                        content: "<p>Marker Location:" + marker.getPosition() + "</p>",
+                          });
+                          
+                        /*google.maps.event.addListener(marker, 'click', (function(marker, index) {
+                           return function() {
+                               infowindow.setContent( jsonObj[index].nombre +" " +jsonObj[index].domicilio);
+                               infowindow.open(map, marker);
+                           }
+                        })(marker, i));*/
+
+                      google.maps.event.addListener(marker, 'mouseover', (function (marker,index) {
+                         return function() {
+                            var point = fromLatLngToPoint(marker.getPosition(), map);
+                            $('#marker-tooltip').html( jsonObj[index].nombre  +'<br>' +jsonObj[index].domicilio  + ', ' + point.y).show();
+                           }
+                        })( marker,i)); 
+
+                      google.maps.event.addListener(marker, 'mouseout', function () {
+                          $('#marker-tooltip').hide();
+                      });
+
+                    } // FIN FOR
+                  /*Codigo encapsulado*/ 
+              
+            }).catch(err => {
+               alert("No existen inmuebles para los criterios indicados" );
+               mapaInicio()
+                  return;
+
+
+            });
+
+
+            
+
+          } 
 
 
               
