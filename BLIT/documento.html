@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+   
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+
+  <body>
+
+	<script >
+
+	var app = angular.module('myApp', []);
+	app.controller('myCtrl', function($scope) {
+	  $scope.url = "./documento.html";
+	  $scope.alCod = "No es un codigo postal valido";
+    $scope.cont = 1 ;
+    $scope.listRutas1 = pintaDocumentos(2,3);
+    $scope.listRutas2 = pintaDocumentos(4,6);
+    $scope.listRutas3 = pintaDocumentos(7,10);
+
+
+
+    function getParamValue(paramName)
+      {
+        var url = window.location.search.substring(1); //get rid of "?" in querystring
+        var qArray = url.split('&'); //get key-value pairs
+        for (var i = 0; i < qArray.length; i++) 
+        {
+            var pArr = qArray[i].split('='); //split key and value
+            if (pArr[0] == paramName) 
+                return pArr[1]; //return value
+        }
+      }
+      
+      function pintaDocumentos(idDoc,limite) 
+      {
+
+          caja = {
+            JPG: ".jpeg",
+            PNG: ".png"
+          };
+        
+          dia = "/" +getParamValue("dia");
+          tipo = getParamValue("tipo");
+          nomCar = "/" +tipo;
+          
+          if (typeof dia === "undefined" && typeof tipo === "undefined"  ){
+            return;
+          }
+
+          var formato = caja[tipo];
+          const rutas = [];
+          for (i = idDoc; i <= limite; i++) {
+            rutaDura  = "https://storage.cloud.google.com/lit-2020" +dia +nomCar +dia  +"-" +idDoc +formato;
+            rutas.push(rutaDura);
+            idDoc++;
+          }
+
+          return rutas;
+      } 
+
+    function constuyeRutas(idDoc,limite){
+     
+      var nomCar = "/PNG";
+        var dia = "/1119";
+        var formato = ".png";
+
+        const rutas = [];
+        for (i = idDoc; i <= limite; i++) {
+           rutaDura  = "https://storage.cloud.google.com/lit-2020" +dia +nomCar +dia  +"-" +idDoc +formato;
+           rutas.push(rutaDura);
+           idDoc++;
+        }
+
+        return rutas;
+
+     }
+
+      function busImagen(idDoc) 
+      {
+        var nomCar = "/JPG";
+        var dia = "/1118";
+        var formato = ".jpeg";
+
+         ima = "https://storage.cloud.google.com/lit-2020" +"/1118" +"/JPG" +"/1118" +"-" +"1" +".jpeg";
+         
+         ima = "https://storage.cloud.google.com/lit-2020/1118/JPG/1118-1.jpeg";
+           
+      } 
+
+      
+	 
+
+	});
+	
+	
+</script>
+	
+
+<div ng-app="myApp" ng-controller="myCtrl">
+ 
+  <!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center" >
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>PHOTOLIO</b></h1>
+  <p><b>A template made by w3.css for photographers.</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  
+  <div class="w3-third"  ng-repeat="x in listRutas1">
+    <img src="{{x}}" style="width:100%">
+  </div>
+
+  <div class="w3-third"  ng-repeat="x in listRutas2">
+    <img src="{{x}}" style="width:100%">
+  </div>
+
+  <div class="w3-third"  ng-repeat="x in listRutas3">
+    <img src="{{x}}" style="width:100%">
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
+</div>
+
+<script >
+  
+
+</script>
+
+</body>
+</html>

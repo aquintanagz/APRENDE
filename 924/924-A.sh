@@ -35,7 +35,7 @@ git push origin rme1014
 ----
 bajar los cambios de la rama del progamador 1
 
-git checkout -b oscar origin/aquintanagz
+git checkout -b develop origin/develop
 
 git pull origin aquintanagz
 

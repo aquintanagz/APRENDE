@@ -105,8 +105,15 @@
 
 
      function initMap() {
-     
-        busDocumento();
+        cpostal = getParamValue("codigo");
+        
+        if (typeof cpostal === "undefined"){
+          mapaInicio();
+          return;
+        }
+
+
+        busDocumento(cpostal);
        
       }
 
@@ -120,31 +127,15 @@
       }
 
 
-      function busDocumento() 
+      function busDocumento(idDoc) 
       {
-        caja = {
-          PDF: ".pdf",
-        };
-      
-        pdia = getParamValue("dia");
-        tipo = getParamValue("tipo");
-        idDoc = getParamValue("num");
-        nomCar = "/" +tipo;
-        dia = "/" +pdia;
+        var nomCar = "/JPG";
+        var dia = "/1121";
+        var formato = ".jpeg";
 
-        if (typeof pdia === "undefined" && typeof tipo === "undefined"  && dia === "undefined"  ){
-          mapaInicio();
-          return;
-        }
-
-        var formato = caja[tipo];
-
-        window.location.href = "https://storage.cloud.google.com/lit-2020" +dia +nomCar +dia  +"-" +idDoc +formato;
-        
-      
-      
+         window.location.href = "https://storage.cloud.google.com/lit-2020" +dia +nomCar +dia  +"-" +idDoc +formato;
+           
       } 
-
 
 
               

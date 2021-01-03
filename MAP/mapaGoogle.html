@@ -1,0 +1,45 @@
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Markers</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./webapop-ubicaciones.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHr7LxuHoKRdqWPyRsWZN-dQdyvu9TMrM&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #marker-tooltip {
+        display: none;
+        position:absolute;
+        width: 450px;
+        height: 200px;
+        top:280px;
+        left: 20px;
+        background-color: #ccc;
+        margin: 10px;
+    }
+    </style>
+
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="marker-tooltip"></div>
+  </body>
+</html>

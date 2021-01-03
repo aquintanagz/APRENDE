@@ -176,12 +176,7 @@
 	  $scope.inCodigoPostal = "";
 	 $scope.buscarDoc = function() {
         
-    var str = $scope.inCodigoPostal;
-  var res = str.split("-");
-
-         $scope.url = "./documento.html?dia=" +res[0] +"&tipo=" +res[1] +"&num=" +res[2]  ;
-
-       
+         $scope.url = "./documento.html?codigo=" +$scope.inCodigoPostal;
 
       };
 
@@ -238,7 +233,7 @@
       <div class="white"> 
       	<h5 class="space">Busqueda de Documentos</h5>
            <span>
-            <input id="codPostal" ng-trim="false" ng-model="inCodigoPostal"  placeholder="Ingrese 1113-PDF-1"  ng-maxlength="13" name="codPostal" value=""><br><br>
+            <input id="codPostal" ng-trim="false" ng-model="inCodigoPostal" ng-keypress="validaLetras()"  placeholder="Ingrese el c&oacute;digo postal"  ng-maxlength="5" name="codPostal" value=""><br><br>
             <input class="btn btn-sm btn-primary button" class="btnBuscar" type="submit"  value="Buscar" style="margin-left: 20px;padding: 0px; width: 80px;" ng-click="buscarDoc()">
           </span>
         
