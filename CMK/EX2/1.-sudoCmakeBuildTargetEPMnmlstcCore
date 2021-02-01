@@ -1,0 +1,17 @@
+MacBook-Pro:build aquintanagz$ sudo cmake --build . --target EP_mnmlstc_core
+Password:
+Scanning dependencies of target EP_mnmlstc_core
+[  0%] Creating directories for 'EP_mnmlstc_core'
+[  0%] Performing download step (git clone) for 'EP_mnmlstc_core'
+-- EP_mnmlstc_core download command succeeded.  See also /Users/aquintanagz/Desktop/mon-cxx2/mongo-cxx-driver-r3.6.2/build/src/bsoncxx/third_party/EP_mnmlstc_core-prefix/src/EP_mnmlstc_core-stamp/EP_mnmlstc_core-download-*.log
+[ 50%] No update step for 'EP_mnmlstc_core'
+[ 50%] No patch step for 'EP_mnmlstc_core'
+[ 50%] Performing configure step for 'EP_mnmlstc_core'
+-- EP_mnmlstc_core configure command succeeded.  See also /Users/aquintanagz/Desktop/mon-cxx2/mongo-cxx-driver-r3.6.2/build/src/bsoncxx/third_party/EP_mnmlstc_core-prefix/src/EP_mnmlstc_core-stamp/EP_mnmlstc_core-configure-*.log
+[ 50%] Performing build step for 'EP_mnmlstc_core'
+-- EP_mnmlstc_core build command succeeded.  See also /Users/aquintanagz/Desktop/mon-cxx2/mongo-cxx-driver-r3.6.2/build/src/bsoncxx/third_party/EP_mnmlstc_core-prefix/src/EP_mnmlstc_core-stamp/EP_mnmlstc_core-build-*.log
+[ 50%] Performing install step for 'EP_mnmlstc_core'
+-- EP_mnmlstc_core install command succeeded.  See also /Users/aquintanagz/Desktop/mon-cxx2/mongo-cxx-driver-r3.6.2/build/src/bsoncxx/third_party/EP_mnmlstc_core-prefix/src/EP_mnmlstc_core-stamp/EP_mnmlstc_core-install-*.log
+[100%] Performing fix-includes step for 'EP_mnmlstc_core'
+[100%] Completed 'EP_mnmlstc_core'
+[100%] Built target EP_mnmlstc_core

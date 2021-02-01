@@ -130,7 +130,7 @@
       function busDocumento(idDoc) 
       {
         var nomCar = "/JPG";
-        var dia = "/1121";
+        var dia = "/1118";
         var formato = ".jpeg";
 
          window.location.href = "https://storage.cloud.google.com/lit-2020" +dia +nomCar +dia  +"-" +idDoc +formato;

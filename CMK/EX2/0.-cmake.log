@@ -1,0 +1,36 @@
+cmake ..                                            \
+>     -DCMAKE_BUILD_TYPE=Release                      \
+>    -DBSONCXX_POLY_USE_MNMLSTC=1            \
+>     -DCMAKE_INSTALL_PREFIX=/opt/mongo-cxx-driver
+-- The CXX compiler identification is AppleClang 10.0.0.10001044
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The C compiler identification is AppleClang 10.0.0.10001044
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+bsoncxx version: 3.6.2
+found libbson version 1.17.3
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+mongocxx version: 3.6.2
+found libmongoc version 1.17.3
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Build files generated for:
+-- 	build system: Unix Makefiles
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/aquintanagz/Desktop/mon-cxx2/mongo-cxx-driver-r3.6.2/build
+MacBook-Pro:build aquintanagz$ pwd
+/Users/aquintanagz/Desktop/mon-cxx2/mongo-cxx-driver-r3.6.2/build

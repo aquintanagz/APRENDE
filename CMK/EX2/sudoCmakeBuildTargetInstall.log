@@ -1,0 +1,600 @@
+MacBook-Pro:build aquintanagz$ sudo cmake --build . --target install
+[  2%] Built target EP_mnmlstc_core
+Scanning dependencies of target bsoncxx_testing
+[  2%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/array/element.cpp.o
+[  2%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/array/value.cpp.o
+[  3%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/array/view.cpp.o
+[  3%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/builder/core.cpp.o
+[  3%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/decimal128.cpp.o
+[  3%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/document/element.cpp.o
+[  4%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/document/value.cpp.o
+[  4%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/document/view.cpp.o
+[  4%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/exception/error_code.cpp.o
+[  4%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/json.cpp.o
+[  4%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/oid.cpp.o
+[  6%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/private/itoa.cpp.o
+[  6%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/string/view_or_value.cpp.o
+[  6%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/types.cpp.o
+[  6%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/types/bson_value/value.cpp.o
+[  7%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/types/bson_value/view.cpp.o
+[  7%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_testing.dir/validate.cpp.o
+[  7%] Linking CXX shared library libbsoncxx-testing.dylib
+[  7%] Built target bsoncxx_testing
+Scanning dependencies of target bsoncxx_shared
+[  7%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/array/element.cpp.o
+[  7%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/array/value.cpp.o
+[  7%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/array/view.cpp.o
+[  8%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/builder/core.cpp.o
+[  8%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/decimal128.cpp.o
+[  8%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/document/element.cpp.o
+[  8%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/document/value.cpp.o
+[  8%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/document/view.cpp.o
+[  9%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/exception/error_code.cpp.o
+[  9%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/json.cpp.o
+[  9%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/oid.cpp.o
+[  9%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/private/itoa.cpp.o
+[ 10%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/string/view_or_value.cpp.o
+[ 10%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/types.cpp.o
+[ 10%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/types/bson_value/value.cpp.o
+[ 10%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/types/bson_value/view.cpp.o
+[ 12%] Building CXX object src/bsoncxx/CMakeFiles/bsoncxx_shared.dir/validate.cpp.o
+[ 12%] Linking CXX shared library libbsoncxx.dylib
+[ 12%] Built target bsoncxx_shared
+Scanning dependencies of target test_bson
+[ 12%] Building CXX object src/bsoncxx/test/CMakeFiles/test_bson.dir/__/__/third_party/catch/main.cpp.o
+[ 13%] Building CXX object src/bsoncxx/test/CMakeFiles/test_bson.dir/bson_b_date.cpp.o
+[ 13%] Building CXX object src/bsoncxx/test/CMakeFiles/test_bson.dir/bson_builder.cpp.o
+[ 13%] Building CXX object src/bsoncxx/test/CMakeFiles/test_bson.dir/bson_get_values.cpp.o
+[ 13%] Building CXX object src/bsoncxx/test/CMakeFiles/test_bson.dir/bson_types.cpp.o
+[ 14%] Building CXX object src/bsoncxx/test/CMakeFiles/test_bson.dir/bson_util_itoa.cpp.o
+[ 14%] Building CXX object src/bsoncxx/test/CMakeFiles/test_bson.dir/bson_validate.cpp.o
+[ 14%] Building CXX object src/bsoncxx/test/CMakeFiles/test_bson.dir/bson_value.cpp.o
+[ 14%] Building CXX object src/bsoncxx/test/CMakeFiles/test_bson.dir/json.cpp.o
+[ 14%] Building CXX object src/bsoncxx/test/CMakeFiles/test_bson.dir/view_or_value.cpp.o
+[ 15%] Linking CXX executable test_bson
+[ 15%] Built target test_bson
+Scanning dependencies of target mongocxx_mocked
+[ 15%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/bulk_write.cpp.o
+[ 15%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/client.cpp.o
+[ 17%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/client_encryption.cpp.o
+[ 17%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/client_session.cpp.o
+[ 17%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/change_stream.cpp.o
+[ 17%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/collection.cpp.o
+[ 18%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/cursor.cpp.o
+[ 18%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/database.cpp.o
+[ 18%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/events/command_failed_event.cpp.o
+[ 18%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/events/command_started_event.cpp.o
+[ 19%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/events/command_succeeded_event.cpp.o
+[ 19%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/events/heartbeat_failed_event.cpp.o
+[ 19%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/events/heartbeat_started_event.cpp.o
+[ 19%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/events/heartbeat_succeeded_event.cpp.o
+[ 20%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/events/server_changed_event.cpp.o
+[ 20%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/events/server_closed_event.cpp.o
+[ 20%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/events/server_description.cpp.o
+[ 20%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/events/server_opening_event.cpp.o
+[ 21%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/events/topology_changed_event.cpp.o
+[ 21%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/events/topology_closed_event.cpp.o
+[ 21%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/events/topology_description.cpp.o
+[ 21%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/events/topology_opening_event.cpp.o
+[ 21%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/exception/error_code.cpp.o
+[ 23%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/exception/operation_exception.cpp.o
+[ 23%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/exception/server_error_code.cpp.o
+[ 23%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/gridfs/bucket.cpp.o
+[ 23%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/gridfs/downloader.cpp.o
+[ 24%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/gridfs/uploader.cpp.o
+[ 24%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/hint.cpp.o
+[ 24%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/index_model.cpp.o
+[ 24%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/index_view.cpp.o
+[ 25%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/instance.cpp.o
+[ 25%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/logger.cpp.o
+[ 25%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/model/delete_many.cpp.o
+[ 25%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/model/delete_one.cpp.o
+[ 26%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/model/insert_one.cpp.o
+[ 26%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/model/replace_one.cpp.o
+[ 26%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/model/update_many.cpp.o
+[ 26%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/model/update_one.cpp.o
+[ 26%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/model/write.cpp.o
+[ 28%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/aggregate.cpp.o
+[ 28%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/apm.cpp.o
+[ 28%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/auto_encryption.cpp.o
+[ 28%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/bulk_write.cpp.o
+[ 29%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/change_stream.cpp.o
+[ 29%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/client.cpp.o
+[ 29%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/client_encryption.cpp.o
+[ 29%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/client_session.cpp.o
+[ 30%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/count.cpp.o
+[ 30%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/estimated_document_count.cpp.o
+[ 30%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/create_collection.cpp.o
+[ 30%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/data_key.cpp.o
+[ 31%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/delete.cpp.o
+[ 31%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/distinct.cpp.o
+[ 31%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/encrypt.cpp.o
+[ 31%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/find_one_and_delete.cpp.o
+[ 32%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/find_one_and_replace.cpp.o
+[ 32%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/find_one_and_update.cpp.o
+[ 32%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/find.cpp.o
+[ 32%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/gridfs/bucket.cpp.o
+[ 32%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/gridfs/upload.cpp.o
+[ 34%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/index.cpp.o
+[ 34%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/index_view.cpp.o
+[ 34%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/insert.cpp.o
+[ 34%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/pool.cpp.o
+[ 35%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/replace.cpp.o
+[ 35%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/tls.cpp.o
+[ 35%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/transaction.cpp.o
+[ 35%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/options/update.cpp.o
+[ 36%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/pipeline.cpp.o
+[ 36%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/pool.cpp.o
+[ 36%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/private/conversions.cpp.o
+[ 36%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/private/libbson.cpp.o
+[ 37%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/private/libmongoc.cpp.o
+[ 37%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/read_concern.cpp.o
+[ 37%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/read_preference.cpp.o
+[ 37%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/result/bulk_write.cpp.o
+[ 37%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/result/delete.cpp.o
+[ 39%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/result/gridfs/upload.cpp.o
+[ 39%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/result/insert_many.cpp.o
+[ 39%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/result/insert_one.cpp.o
+[ 39%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/result/replace_one.cpp.o
+[ 40%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/result/update.cpp.o
+[ 40%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/uri.cpp.o
+[ 40%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/validation_criteria.cpp.o
+[ 40%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_mocked.dir/write_concern.cpp.o
+[ 41%] Linking CXX shared library libmongocxx-mocked.dylib
+[ 41%] Built target mongocxx_mocked
+Scanning dependencies of target mongocxx_shared
+[ 41%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/bulk_write.cpp.o
+[ 41%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/client.cpp.o
+[ 41%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/client_encryption.cpp.o
+[ 42%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/client_session.cpp.o
+[ 42%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/change_stream.cpp.o
+[ 42%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/collection.cpp.o
+[ 42%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/cursor.cpp.o
+[ 43%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/database.cpp.o
+[ 43%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/events/command_failed_event.cpp.o
+[ 43%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/events/command_started_event.cpp.o
+[ 43%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/events/command_succeeded_event.cpp.o
+[ 43%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/events/heartbeat_failed_event.cpp.o
+[ 45%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/events/heartbeat_started_event.cpp.o
+[ 45%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/events/heartbeat_succeeded_event.cpp.o
+[ 45%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/events/server_changed_event.cpp.o
+[ 45%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/events/server_closed_event.cpp.o
+[ 46%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/events/server_description.cpp.o
+[ 46%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/events/server_opening_event.cpp.o
+[ 46%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/events/topology_changed_event.cpp.o
+[ 46%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/events/topology_closed_event.cpp.o
+[ 47%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/events/topology_description.cpp.o
+[ 47%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/events/topology_opening_event.cpp.o
+[ 47%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/exception/error_code.cpp.o
+[ 47%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/exception/operation_exception.cpp.o
+[ 48%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/exception/server_error_code.cpp.o
+[ 48%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/gridfs/bucket.cpp.o
+[ 48%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/gridfs/downloader.cpp.o
+[ 48%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/gridfs/uploader.cpp.o
+[ 50%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/hint.cpp.o
+[ 50%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/index_model.cpp.o
+[ 50%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/index_view.cpp.o
+[ 50%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/instance.cpp.o
+[ 50%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/logger.cpp.o
+[ 51%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/model/delete_many.cpp.o
+[ 51%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/model/delete_one.cpp.o
+[ 51%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/model/insert_one.cpp.o
+[ 51%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/model/replace_one.cpp.o
+[ 52%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/model/update_many.cpp.o
+[ 52%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/model/update_one.cpp.o
+[ 52%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/model/write.cpp.o
+[ 52%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/aggregate.cpp.o
+[ 53%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/apm.cpp.o
+[ 53%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/auto_encryption.cpp.o
+[ 53%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/bulk_write.cpp.o
+[ 53%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/change_stream.cpp.o
+[ 54%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/client.cpp.o
+[ 54%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/client_encryption.cpp.o
+[ 54%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/client_session.cpp.o
+[ 54%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/count.cpp.o
+[ 54%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/estimated_document_count.cpp.o
+[ 56%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/create_collection.cpp.o
+[ 56%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/data_key.cpp.o
+[ 56%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/delete.cpp.o
+[ 56%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/distinct.cpp.o
+[ 57%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/encrypt.cpp.o
+[ 57%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/find_one_and_delete.cpp.o
+[ 57%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/find_one_and_replace.cpp.o
+[ 57%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/find_one_and_update.cpp.o
+[ 58%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/find.cpp.o
+[ 58%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/gridfs/bucket.cpp.o
+[ 58%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/gridfs/upload.cpp.o
+[ 58%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/index.cpp.o
+[ 59%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/index_view.cpp.o
+[ 59%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/insert.cpp.o
+[ 59%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/pool.cpp.o
+[ 59%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/replace.cpp.o
+[ 60%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/tls.cpp.o
+[ 60%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/transaction.cpp.o
+[ 60%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/options/update.cpp.o
+[ 60%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/pipeline.cpp.o
+[ 60%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/pool.cpp.o
+[ 62%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/private/conversions.cpp.o
+[ 62%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/private/libbson.cpp.o
+[ 62%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/private/libmongoc.cpp.o
+[ 62%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/read_concern.cpp.o
+[ 63%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/read_preference.cpp.o
+[ 63%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/result/bulk_write.cpp.o
+[ 63%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/result/delete.cpp.o
+[ 63%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/result/gridfs/upload.cpp.o
+[ 64%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/result/insert_many.cpp.o
+[ 64%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/result/insert_one.cpp.o
+[ 64%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/result/replace_one.cpp.o
+[ 64%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/result/update.cpp.o
+[ 65%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/uri.cpp.o
+[ 65%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/validation_criteria.cpp.o
+[ 65%] Building CXX object src/mongocxx/CMakeFiles/mongocxx_shared.dir/write_concern.cpp.o
+[ 65%] Linking CXX shared library libmongocxx.dylib
+[ 65%] Built target mongocxx_shared
+Scanning dependencies of target test_transactions_specs
+[ 67%] Building CXX object src/mongocxx/test/CMakeFiles/test_transactions_specs.dir/__/test_util/client_helpers.cpp.o
+[ 67%] Building CXX object src/mongocxx/test/CMakeFiles/test_transactions_specs.dir/__/__/third_party/catch/main.cpp.o
+[ 67%] Building CXX object src/mongocxx/test/CMakeFiles/test_transactions_specs.dir/spec/transactions.cpp.o
+[ 67%] Building CXX object src/mongocxx/test/CMakeFiles/test_transactions_specs.dir/spec/operation.cpp.o
+[ 68%] Building CXX object src/mongocxx/test/CMakeFiles/test_transactions_specs.dir/spec/monitoring.cpp.o
+[ 68%] Building CXX object src/mongocxx/test/CMakeFiles/test_transactions_specs.dir/spec/util.cpp.o
+[ 68%] Linking CXX executable test_transactions_specs
+[ 68%] Built target test_transactions_specs
+Scanning dependencies of target test_command_monitoring_specs
+[ 68%] Building CXX object src/mongocxx/test/CMakeFiles/test_command_monitoring_specs.dir/__/test_util/client_helpers.cpp.o
+[ 68%] Building CXX object src/mongocxx/test/CMakeFiles/test_command_monitoring_specs.dir/__/__/third_party/catch/main.cpp.o
+[ 69%] Building CXX object src/mongocxx/test/CMakeFiles/test_command_monitoring_specs.dir/spec/command_monitoring.cpp.o
+[ 69%] Building CXX object src/mongocxx/test/CMakeFiles/test_command_monitoring_specs.dir/spec/operation.cpp.o
+[ 69%] Building CXX object src/mongocxx/test/CMakeFiles/test_command_monitoring_specs.dir/spec/monitoring.cpp.o
+[ 69%] Building CXX object src/mongocxx/test/CMakeFiles/test_command_monitoring_specs.dir/spec/util.cpp.o
+[ 70%] Linking CXX executable test_command_monitoring_specs
+[ 70%] Built target test_command_monitoring_specs
+Scanning dependencies of target test_logging
+[ 71%] Building CXX object src/mongocxx/test/CMakeFiles/test_logging.dir/__/__/third_party/catch/main.cpp.o
+[ 71%] Building CXX object src/mongocxx/test/CMakeFiles/test_logging.dir/logging.cpp.o
+[ 71%] Linking CXX executable test_logging
+[ 71%] Built target test_logging
+Scanning dependencies of target test_client_side_encryption_specs
+[ 73%] Building CXX object src/mongocxx/test/CMakeFiles/test_client_side_encryption_specs.dir/__/test_util/client_helpers.cpp.o
+[ 73%] Building CXX object src/mongocxx/test/CMakeFiles/test_client_side_encryption_specs.dir/__/__/third_party/catch/main.cpp.o
+[ 73%] Building CXX object src/mongocxx/test/CMakeFiles/test_client_side_encryption_specs.dir/spec/client_side_encryption.cpp.o
+[ 73%] Building CXX object src/mongocxx/test/CMakeFiles/test_client_side_encryption_specs.dir/spec/operation.cpp.o
+[ 74%] Building CXX object src/mongocxx/test/CMakeFiles/test_client_side_encryption_specs.dir/spec/monitoring.cpp.o
+[ 74%] Building CXX object src/mongocxx/test/CMakeFiles/test_client_side_encryption_specs.dir/spec/util.cpp.o
+[ 74%] Linking CXX executable test_client_side_encryption_specs
+[ 74%] Built target test_client_side_encryption_specs
+Scanning dependencies of target test_retryable_reads_specs
+[ 74%] Building CXX object src/mongocxx/test/CMakeFiles/test_retryable_reads_specs.dir/__/test_util/client_helpers.cpp.o
+[ 74%] Building CXX object src/mongocxx/test/CMakeFiles/test_retryable_reads_specs.dir/__/__/third_party/catch/main.cpp.o
+[ 75%] Building CXX object src/mongocxx/test/CMakeFiles/test_retryable_reads_specs.dir/spec/retryable-reads.cpp.o
+[ 75%] Building CXX object src/mongocxx/test/CMakeFiles/test_retryable_reads_specs.dir/spec/operation.cpp.o
+[ 75%] Building CXX object src/mongocxx/test/CMakeFiles/test_retryable_reads_specs.dir/spec/monitoring.cpp.o
+[ 75%] Building CXX object src/mongocxx/test/CMakeFiles/test_retryable_reads_specs.dir/spec/util.cpp.o
+[ 75%] Linking CXX executable test_retryable_reads_specs
+[ 75%] Built target test_retryable_reads_specs
+Scanning dependencies of target test_gridfs_specs
+[ 75%] Building CXX object src/mongocxx/test/CMakeFiles/test_gridfs_specs.dir/__/test_util/client_helpers.cpp.o
+[ 76%] Building CXX object src/mongocxx/test/CMakeFiles/test_gridfs_specs.dir/__/__/third_party/catch/main.cpp.o
+[ 76%] Building CXX object src/mongocxx/test/CMakeFiles/test_gridfs_specs.dir/spec/gridfs.cpp.o
+[ 76%] Building CXX object src/mongocxx/test/CMakeFiles/test_gridfs_specs.dir/spec/operation.cpp.o
+[ 76%] Building CXX object src/mongocxx/test/CMakeFiles/test_gridfs_specs.dir/spec/monitoring.cpp.o
+[ 76%] Building CXX object src/mongocxx/test/CMakeFiles/test_gridfs_specs.dir/spec/util.cpp.o
+[ 78%] Linking CXX executable test_gridfs_specs
+[ 78%] Built target test_gridfs_specs
+Scanning dependencies of target test_change_stream_specs
+[ 78%] Building CXX object src/mongocxx/test/CMakeFiles/test_change_stream_specs.dir/__/test_util/client_helpers.cpp.o
+[ 78%] Building CXX object src/mongocxx/test/CMakeFiles/test_change_stream_specs.dir/__/__/third_party/catch/main.cpp.o
+[ 78%] Building CXX object src/mongocxx/test/CMakeFiles/test_change_stream_specs.dir/spec/change_stream.cpp.o
+[ 79%] Building CXX object src/mongocxx/test/CMakeFiles/test_change_stream_specs.dir/spec/operation.cpp.o
+[ 79%] Building CXX object src/mongocxx/test/CMakeFiles/test_change_stream_specs.dir/spec/monitoring.cpp.o
+[ 79%] Building CXX object src/mongocxx/test/CMakeFiles/test_change_stream_specs.dir/spec/util.cpp.o
+[ 79%] Linking CXX executable test_change_stream_specs
+[ 79%] Built target test_change_stream_specs
+Scanning dependencies of target test_driver
+[ 80%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/__/test_util/client_helpers.cpp.o
+[ 80%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/__/__/third_party/catch/main.cpp.o
+[ 80%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/bulk_write.cpp.o
+[ 80%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/change_streams.cpp.o
+[ 81%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/client.cpp.o
+[ 81%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/client_session.cpp.o
+[ 81%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/client_side_encryption.cpp.o
+[ 81%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/collection.cpp.o
+[ 81%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/collection_mocked.cpp.o
+[ 82%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/conversions.cpp.o
+[ 82%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/database.cpp.o
+[ 82%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/gridfs/bucket.cpp.o
+[ 82%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/gridfs/downloader.cpp.o
+[ 84%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/gridfs/uploader.cpp.o
+[ 84%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/hint.cpp.o
+[ 84%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/index_view.cpp.o
+[ 84%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/model/delete_many.cpp.o
+[ 85%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/model/delete_one.cpp.o
+[ 85%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/model/insert_one.cpp.o
+[ 85%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/model/replace_one.cpp.o
+[ 85%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/model/update_many.cpp.o
+[ 86%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/model/update_one.cpp.o
+[ 86%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/aggregate.cpp.o
+[ 86%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/bulk_write.cpp.o
+[ 86%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/client_session.cpp.o
+[ 86%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/count.cpp.o
+[ 87%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/create_collection.cpp.o
+[ 87%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/delete.cpp.o
+[ 87%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/distinct.cpp.o
+[ 87%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/find.cpp.o
+[ 89%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/find_one_and_delete.cpp.o
+[ 89%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/find_one_and_replace.cpp.o
+[ 89%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/find_one_and_update.cpp.o
+[ 89%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/gridfs/bucket.cpp.o
+[ 90%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/gridfs/upload.cpp.o
+[ 90%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/index.cpp.o
+[ 90%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/insert.cpp.o
+[ 90%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/pool.cpp.o
+[ 91%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/replace.cpp.o
+[ 91%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/options/update.cpp.o
+[ 91%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/pool.cpp.o
+[ 91%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/private/scoped_bson_t.cpp.o
+[ 92%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/private/write_concern.cpp.o
+[ 92%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/read_concern.cpp.o
+[ 92%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/read_preference.cpp.o
+[ 92%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/result/bulk_write.cpp.o
+[ 92%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/result/delete.cpp.o
+[ 93%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/result/gridfs/upload.cpp.o
+[ 93%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/result/insert_one.cpp.o
+[ 93%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/result/replace_one.cpp.o
+[ 93%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/result/update.cpp.o
+[ 95%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/sdam-monitoring.cpp.o
+[ 95%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/spec/monitoring.cpp.o
+[ 95%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/transactions.cpp.o
+[ 95%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/uri.cpp.o
+[ 96%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/validation_criteria.cpp.o
+[ 96%] Building CXX object src/mongocxx/test/CMakeFiles/test_driver.dir/write_concern.cpp.o
+[ 96%] Linking CXX executable test_driver
+[ 96%] Built target test_driver
+Scanning dependencies of target test_instance
+[ 96%] Building CXX object src/mongocxx/test/CMakeFiles/test_instance.dir/__/__/third_party/catch/main.cpp.o
+[ 96%] Building CXX object src/mongocxx/test/CMakeFiles/test_instance.dir/instance.cpp.o
+[ 96%] Linking CXX executable test_instance
+[ 96%] Built target test_instance
+Scanning dependencies of target test_read_write_concern_specs
+[ 96%] Building CXX object src/mongocxx/test/CMakeFiles/test_read_write_concern_specs.dir/__/test_util/client_helpers.cpp.o
+[ 97%] Building CXX object src/mongocxx/test/CMakeFiles/test_read_write_concern_specs.dir/__/__/third_party/catch/main.cpp.o
+[ 97%] Building CXX object src/mongocxx/test/CMakeFiles/test_read_write_concern_specs.dir/spec/read_write_concern.cpp.o
+[ 97%] Building CXX object src/mongocxx/test/CMakeFiles/test_read_write_concern_specs.dir/spec/operation.cpp.o
+[ 97%] Building CXX object src/mongocxx/test/CMakeFiles/test_read_write_concern_specs.dir/spec/monitoring.cpp.o
+[ 98%] Building CXX object src/mongocxx/test/CMakeFiles/test_read_write_concern_specs.dir/spec/util.cpp.o
+[ 98%] Linking CXX executable test_read_write_concern_specs
+[ 98%] Built target test_read_write_concern_specs
+Scanning dependencies of target test_crud_specs
+[ 98%] Building CXX object src/mongocxx/test/CMakeFiles/test_crud_specs.dir/__/test_util/client_helpers.cpp.o
+[ 98%] Building CXX object src/mongocxx/test/CMakeFiles/test_crud_specs.dir/__/__/third_party/catch/main.cpp.o
+[ 98%] Building CXX object src/mongocxx/test/CMakeFiles/test_crud_specs.dir/spec/crud.cpp.o
+[100%] Building CXX object src/mongocxx/test/CMakeFiles/test_crud_specs.dir/spec/operation.cpp.o
+[100%] Building CXX object src/mongocxx/test/CMakeFiles/test_crud_specs.dir/spec/monitoring.cpp.o
+[100%] Building CXX object src/mongocxx/test/CMakeFiles/test_crud_specs.dir/spec/util.cpp.o
+[100%] Linking CXX executable test_crud_specs
+[100%] Built target test_crud_specs
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /opt/mongo-cxx-driver/share/mongo-cxx-driver/LICENSE
+-- Installing: /opt/mongo-cxx-driver/share/mongo-cxx-driver/README.md
+-- Installing: /opt/mongo-cxx-driver/share/mongo-cxx-driver/THIRD-PARTY-NOTICES
+-- Up-to-date: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/view_or_value.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/types
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/types/bson_value
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/types/bson_value/view_or_value.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/types/bson_value/make_value.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/types/bson_value/value.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/types/bson_value/private
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/types/bson_value/view.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/types/private
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/json.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/test
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/cmake
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/util
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/util/functor.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/config
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/config/prelude.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/config/private
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/config/postlude.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/config/compiler.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/array
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/array/element.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/array/view_or_value.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/array/value.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/array/view.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/enums
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/enums/type.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/enums/binary_sub_type.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/document
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/document/element.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/document/view_or_value.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/document/value.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/document/view.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/stdx
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/stdx/optional.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/stdx/make_unique.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/stdx/string_view.hpp
+-- Up-to-date: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/third_party
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/private
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/validate.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/test_util
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/string
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/string/to_string.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/string/view_or_value.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/oid.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/types.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/stream
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/stream/single_context.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/stream/document.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/stream/closed_context.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/stream/key_context.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/stream/value_context.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/stream/array.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/stream/helpers.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/stream/array_context.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/basic
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/basic/document.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/basic/array.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/basic/sub_array.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/basic/sub_document.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/basic/kvp.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/basic/impl.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/basic/helpers.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/concatenate.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/builder/core.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/decimal128.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/exception
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/exception/error_code.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/exception/exception.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/config/export.hpp
+-- Installing: /opt/mongo-cxx-driver/lib/cmake/libbsoncxx-3.6.2/libbsoncxx-config.cmake
+-- Installing: /opt/mongo-cxx-driver/lib/cmake/libbsoncxx-3.6.2/libbsoncxx-config-version.cmake
+-- Installing: /opt/mongo-cxx-driver/lib/libbsoncxx.3.6.2.dylib
+-- Installing: /opt/mongo-cxx-driver/lib/libbsoncxx._noabi.dylib
+-- Installing: /opt/mongo-cxx-driver/lib/libbsoncxx.dylib
+-- Installing: /opt/mongo-cxx-driver/lib/cmake/bsoncxx-3.6.2/bsoncxx_targets.cmake
+-- Installing: /opt/mongo-cxx-driver/lib/cmake/bsoncxx-3.6.2/bsoncxx_targets-release.cmake
+-- Installing: /opt/mongo-cxx-driver/lib/cmake/bsoncxx-3.6.2/bsoncxx-config-version.cmake
+-- Installing: /opt/mongo-cxx-driver/lib/cmake/bsoncxx-3.6.2/bsoncxx-config.cmake
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/config/config.hpp
+-- Installing: /opt/mongo-cxx-driver/include/bsoncxx/v_noabi/bsoncxx/config/version.hpp
+-- Installing: /opt/mongo-cxx-driver/lib/pkgconfig/libbsoncxx.pc
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/index_model.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/estimated_document_count.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/find_one_common_options.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/transaction.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/update.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/auto_encryption.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/change_stream.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/insert.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/data_key.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/index.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/distinct.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/find_one_and_update.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/bulk_write.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/index_view.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/tls.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/pool.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/ssl.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/replace.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/client_encryption.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/find.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/private
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/gridfs
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/gridfs/upload.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/gridfs/bucket.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/delete.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/create_collection.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/find_one_and_replace.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/count.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/client_session.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/encrypt.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/aggregate.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/find_one_and_delete.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/apm.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/options/client.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/instance.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/logger.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/cursor.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/write_concern.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/change_stream.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/result
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/result/update.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/result/bulk_write.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/result/insert_one.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/result/gridfs
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/result/gridfs/upload.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/result/delete.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/result/insert_many.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/result/replace_one.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/test
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/test/options
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/test/options/gridfs
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/test/result
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/test/result/gridfs
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/test/spec
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/test/private
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/test/gridfs
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/test/model
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/cmake
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/config
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/config/prelude.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/config/private
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/config/postlude.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/config/compiler.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/database.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/bulk_write.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/validation_criteria.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/index_view.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/pool.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/hint.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/write_type.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/client_encryption.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/read_preference.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/private
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/gridfs
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/gridfs/uploader.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/gridfs/downloader.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/gridfs/private
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/gridfs/bucket.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/uri.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/pipeline.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/model
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/model/delete_many.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/model/delete_one.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/model/update_many.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/model/update_one.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/model/insert_one.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/model/write.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/model/replace_one.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/test_util
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/stdx.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/client_session.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/read_concern.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/events
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/events/server_description.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/events/topology_closed_event.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/events/server_opening_event.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/events/topology_opening_event.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/events/server_closed_event.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/events/topology_changed_event.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/events/command_succeeded_event.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/events/heartbeat_started_event.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/events/server_changed_event.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/events/heartbeat_failed_event.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/events/command_started_event.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/events/heartbeat_succeeded_event.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/events/command_failed_event.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/events/topology_description.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/collection.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/exception
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/exception/write_exception.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/exception/gridfs_exception.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/exception/logic_error.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/exception/query_exception.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/exception/authentication_exception.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/exception/private
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/exception/bulk_write_exception.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/exception/operation_exception.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/exception/error_code.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/exception/server_error_code.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/exception/exception.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/client.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/config/export.hpp
+-- Installing: /opt/mongo-cxx-driver/lib/cmake/libmongocxx-3.6.2/libmongocxx-config.cmake
+-- Installing: /opt/mongo-cxx-driver/lib/cmake/libmongocxx-3.6.2/libmongocxx-config-version.cmake
+-- Installing: /opt/mongo-cxx-driver/lib/libmongocxx.3.6.2.dylib
+-- Installing: /opt/mongo-cxx-driver/lib/libmongocxx._noabi.dylib
+-- Installing: /opt/mongo-cxx-driver/lib/libmongocxx.dylib
+-- Installing: /opt/mongo-cxx-driver/lib/cmake/mongocxx-3.6.2/mongocxx_targets.cmake
+-- Installing: /opt/mongo-cxx-driver/lib/cmake/mongocxx-3.6.2/mongocxx_targets-release.cmake
+-- Installing: /opt/mongo-cxx-driver/lib/cmake/mongocxx-3.6.2/mongocxx-config-version.cmake
+-- Installing: /opt/mongo-cxx-driver/lib/cmake/mongocxx-3.6.2/mongocxx-config.cmake
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/config/config.hpp
+-- Installing: /opt/mongo-cxx-driver/include/mongocxx/v_noabi/mongocxx/config/version.hpp
+-- Installing: /opt/mongo-cxx-driver/lib/pkgconfig/libmongocxx.pc
+-- Installing: /opt/mongo-cxx-driver/share/mongo-cxx-driver/uninstall.sh
